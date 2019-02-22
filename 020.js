@@ -1,25 +1,20 @@
-// -> Create a machine object
-//    with a property motors = 4
-__
+let machine = {
+	motors: 4,
+}
+let robot = {
+	friendly: true,
+}
+let robby = {}
 
-// -> Create a robot object
-//    with a property friendly = true
-__
+robot.__proto__ = machine;
 
-// -> Create a robby object
-__
-
-// -> Make machine the prototype of robot
-__
-
-// -> Make robot the prototype of robby
-__
+robby.__proto__= robot;
 
 // -> What is `robby.motors`?
-claim(robby.motors, __);
+claim(robby.motors, 4);
 
 // -> What is `robby.friendly`?
-claim(robby.friendly, __);
+claim(robby.friendly, true);
 
 
 // ------------------------------------------------
